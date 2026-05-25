@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  flask-app:
+    image: ${DOCKER_USERNAME}/flask-cicd-app:latest
+    container_name: flask-app
+    restart: always
+    ports:
+      - "80:5000"
