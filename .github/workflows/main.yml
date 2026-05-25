@@ -16,6 +16,10 @@ jobs:
     # Chạy trên Ubuntu VM
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ./flask-cicd-app
+
     steps:
 
       # Bước 1: Checkout source code
